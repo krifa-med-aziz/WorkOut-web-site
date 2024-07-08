@@ -129,3 +129,167 @@ header .navbar .navbar-brand:hover {
     font-size: 60px;
   }
 }
+/*--------------------------------------------------------------
+# section1
+--------------------------------------------------------------*/
+.section1 {
+  margin: 100px 0px 200px 0px;
+}
+.section1 .container .title h2 {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 600;
+}
+.section1 .container .title p {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.351);
+}
+.section1 .container .row .col .box1 {
+  background-color: #333442;
+  border-radius: 10px;
+  position: relative;
+}
+.section1 .container .row .col .box2 {
+  background-color: #232433;
+  border-radius: 10px;
+  position: relative;
+}
+.section1 .container .row .col .box3 {
+  background-color: #333442;
+  border-radius: 10px;
+  position: relative;
+}
+.section1 .container .row .col .box4 {
+  background-color: #4f5360;
+  border-radius: 10px;
+  position: relative;
+}
+.section1 .container .row .col p {
+  color: white;
+}
+.section1 .container .row .col .box1 .row .col-10 p,
+.section1 .container .row .col .box2 .row .col-10 p,
+.section1 .container .row .col .box3 .row .col-10 p,
+.section1 .container .row .col .box4 .row .col-10 p {
+  color: rgba(255, 255, 255, 0.351);
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 0px;
+}
+.box-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+/*--------------------------------------------------------------
+# section2 & section3 & section4
+--------------------------------------------------------------*/
+.section4 .container .row .col h2,
+.section3 .container .row .col h2,
+.section2 .container .row .col h2 {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 600;
+}
+.section4 .container .row .col p,
+.section3 .container .row .col p,
+.section2 .container .row .col p {
+  color: rgba(255, 255, 255, 0.351);
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 0px;
+  line-height: 1.6;
+}
+.section3 .container .row .col a,
+.section2 .container .row .col a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+.section3 {
+  margin: 150px 0px;
+}
+.section4 .container .row .col p {
+  color: rgba(255, 255, 255, 0.499);
+}
+.section3 .container .row .col h2 {
+  font-size: 45px;
+}
+.section4 .container .row .col .box-1 {
+  background-color: #232433;
+  height: 100%;
+}
+.section4 .container .row .col .box-1 a:hover,
+.section4 .container .row .col .box-1 a {
+  transition: 0.3s ease-in-out;
+  width: 20%;
+}
+.section4 .container .row .col .box-2 {
+  background-color: #333442;
+  height: 100%;
+}
+.section4 .container .row .col .box-2 a {
+  text-decoration: none;
+  background-color: #0071c8;
+  color: white;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+.section4 .container .row .col .box-2 a:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+.section4 .container .row .col ul li {
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.499);
+}
+.section4 .container .row .col p {
+  line-height: 1.4;
+}
+.section4 .container .section4-title h2 {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.159);
+}
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+footer {
+  margin: 200px 0px 0px 0px;
+  background-color: #1a1a1a;
+}
+footer .container .row .col-lg-6 a {
+  text-decoration: none;
+}
+footer .container .row .col-lg-6 h1 {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+footer .container .row .col-lg-6 {
+  color: rgba(255, 255, 255, 0.327);
+}
+footer .container .row .col-lg-3 h4 {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+footer .container .row .col-lg-3 ul {
+  list-style: none;
+  padding-left: 0px;
+  color: rgba(255, 255, 255, 0.327);
+}
+footer .container .row .col-lg-3 ul li i {
+  color: rgba(255, 255, 255, 0.527);
+}
+footer .container .row .col-lg-3 .social-links a {
+  color: rgba(255, 255, 255, 0.327);
+  padding: 5px 8px;
+  border: solid 0.8px rgba(255, 255, 255, 0.327);
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+}
+footer .container .row .col-lg-3 .social-links a:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
