@@ -53,3 +53,29 @@ navLinks.addEventListener("click", function (e) {
   const id = linked.getAttribute("href");
   document.querySelector(id).scrollIntoView({ behavior: "smooth" });
 });
+///////////// ScrollUp button
+const scrollUp = document.querySelector(".ScrollUp");
+const landingPage = document.querySelector(".landing-page");
+const navBar = document.querySelector(".navbar");
+
+scrollUp.addEventListener("click", function (e) {
+  e.preventDefault();
+  navBar.scrollIntoView({ behavior: "smooth" });
+});
+const stikyscrollUp = (entries) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    scrollUp.classList.remove("hide");
+    scrollUp.classList.add("show");
+  } else {
+    scrollUp.classList.remove("show");
+    scrollUp.classList.add("hide");
+  }
+};
+const landingPageObserver = new IntersectionObserver(stikyscrollUp, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-150px`,
+});
+landingPageObserver.observe(landingPage);
+/////////////////////

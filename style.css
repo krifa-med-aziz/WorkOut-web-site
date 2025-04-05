@@ -317,7 +317,7 @@ footer .container .row .col-lg-3 .social-links a:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
   z-index: 200;
   transition: all 0.5s;
 }
@@ -395,4 +395,32 @@ form {
 .section--hidden {
   opacity: 0;
   transform: translateY(8rem);
+}
+
+.ScrollUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  border: solid 1px white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 150;
+  font-size: 20px;
+  color: white;
+  transition: ease 0.3s, transform 0.3s ease, opacity ease 0.3s;
+}
+.ScrollUp:hover {
+  background-color: var(--color-primary-darker);
+}
+.ScrollUp.hide {
+  transform: translateY(80px);
+  opacity: 0;
+}
+.ScrollUp.show {
+  transform: translateY(0px);
+  opacity: 1;
 }
