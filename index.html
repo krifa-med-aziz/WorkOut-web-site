@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WorkOut</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
     <link rel="shortcut icon" href="Assets/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -61,22 +62,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
               <li class="nav-item">
-                <a class="nav-link" href="#">WORKOUTS</a>
+                <a class="nav-link" href="#section1">WORKOUTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PROGRAMS</a>
+                <a class="nav-link" href="#section2">PROGRAMS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">HEALTHY LIVING</a>
+                <a class="nav-link" href="#section3">HEALTHY LIVING</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">COMMUNITY</a>
+                <a class="nav-link" href="#section3">COMMUNITY</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
+                <a class="nav-link" href="#section3">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">STORE</a>
+                <a class="nav-link" href="#section4">STORE</a>
               </li>
             </ul>
           </div>
@@ -99,7 +100,7 @@
                   stay fit!
                 </p>
               </div>
-              <a class="p-3" href="#">Join Club Now!</a>
+              <button class="p-3 join__btn">Join Club Now!</button>
               <div class="brands text-center text-sm-start">
                 <p>AS FEATURED IN</p>
                 <div
@@ -141,7 +142,7 @@
           </div>
         </div>
       </div>
-      <div class="section1">
+      <div class="section1 section" id="section1">
         <div class="container">
           <div class="title mb-5">
             <h2 class="text-lg-start text-center">Not sure where to start?</h2>
@@ -218,7 +219,7 @@
           </div>
         </div>
       </div>
-      <div class="section2 my-5">
+      <div class="section2 section my-5" id="section2">
         <div class="container">
           <div class="row flex-column flex-lg-row gy-4">
             <div class="col d-flex flex-column justify-content-center">
@@ -245,7 +246,7 @@
           </div>
         </div>
       </div>
-      <div class="section3">
+      <div class="section3 section" id="section3">
         <div class="container">
           <div class="row flex-column-reverse flex-lg-row gy-4">
             <div class="col">
@@ -270,7 +271,7 @@
           </div>
         </div>
       </div>
-      <div class="section4 mb-5">
+      <div class="section4 section mb-5">
         <div class="container">
           <div class="section4-title">
             <h2 class="pb-4 mb-5">Membership</h2>
@@ -398,5 +399,18 @@
         </div>
       </div>
     </footer>
+    <div class="overlay hidden"></div>
+    <div class="joinNowModal hidden">
+      <button class="btn--close-modal form__btn">&times;</button>
+      <form class="modal__form">
+        <label class="form__label">Name</label>
+        <input type="text" class="form__input" required />
+        <label class="form__label">Phone Number</label>
+        <input type="tel" class="form__input" required maxlength="8" />
+        <label class="form__label">Date</label>
+        <input type="date" class="form__input" class="form__input" />
+      </form>
+      <button type="submit" class="join__now">Join Now!</button>
+    </div>
   </body>
 </html>

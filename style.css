@@ -1,5 +1,6 @@
 #body {
   background-color: #171717;
+  position: relative;
 }
 /*--------------------------------------------------------------
 # navbar
@@ -10,7 +11,7 @@ header .navbar a {
   font-weight: 400;
 }
 header .navbar a:hover {
-  color: rgba(255, 255, 255, 0.411);
+  color: white;
 }
 header .navbar .navbar-brand {
   color: white;
@@ -40,7 +41,7 @@ header .navbar .navbar-brand:hover {
 .landing-page .row .col-lg-7 .text p {
   max-width: 80%;
 }
-.landing-page .row .col-lg-7 a {
+.join__btn {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: white;
@@ -48,6 +49,7 @@ header .navbar .navbar-brand:hover {
   border-radius: 10px;
   font-weight: 600;
   transition: 0.3s;
+  border: none;
 }
 .landing-page .row .col-lg-7 a:hover {
   opacity: 0.8;
@@ -299,4 +301,98 @@ footer .container .row .col-lg-3 .social-links a {
 footer .container .row .col-lg-3 .social-links a:hover {
   opacity: 0.7;
   transition: 0.3s ease-in-out;
+}
+/*--------------------------------------------------------------
+# overlay
+--------------------------------------------------------------*/
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.overlay {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  z-index: 200;
+  transition: all 0.5s;
+}
+.joinNowModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: rgba(255, 255, 255, 0.607) solid 2px;
+  padding: 3rem;
+  border-radius: 1rem;
+  background-color: #171717;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  color: white;
+  z-index: 250;
+  max-width: 60%;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 0.5s;
+}
+.btn--close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+.join__now {
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  background-color: #e7523c;
+  color: white;
+  border: none;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: auto auto;
+  gap: 1rem 1rem;
+}
+.form__input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  padding: 0.3rem 0rem;
+  border-radius: 0.7rem;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__btn {
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  background-color: #171717;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form__btn:focus {
+  outline: none;
+  background-color: #171717;
+}
+.form__label {
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
